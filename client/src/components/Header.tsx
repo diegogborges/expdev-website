@@ -6,9 +6,9 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
+    { label: "Clientes", href: "#clients" },
     { label: "Serviços", href: "#services" },
     { label: "Como Trabalhamos", href: "#how-we-work" },
-    { label: "Por Que EXPDEV", href: "#why-choose" },
     { label: "Contato", href: "#contact" },
   ];
 

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ClientsSection from "@/components/ClientsSection";
 import { CheckCircle2, AlertCircle, Zap, Shield } from "lucide-react";
 
 export default function Home() {
@@ -142,6 +143,11 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Clients Section */}
+        <section id="clients">
+          <ClientsSection />
         </section>
 
         {/* Services Section */}
