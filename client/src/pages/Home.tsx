@@ -242,7 +242,7 @@ export default function Home() {
         {/* Why Choose Section */}
         <section id="why-choose" className="container py-16 md:py-24 border-b border-border">
           <div className="mb-12">
-            <h2 className="mb-4 text-foreground">Por Que Escolher EXPDEV</h2>
+            <h2 className="mb-4 text-foreground">Por Que Escolher EXPONENTIAL DEV</h2>
             <p className="text-lg text-muted-foreground max-w-2xl">
               Não somos apenas uma empresa de tecnologia. Somos seu parceiro
               técnico de confiança.
@@ -281,7 +281,7 @@ export default function Home() {
                 prática.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="mailto:contato@expdev.com">
+                <a href="https://wa.me/5516992507202?text=Ol%C3%A1%20EXPONENTIAL%20DEV!%20Gostaria%20de%20agendar%20uma%20conversa%20sobre%20sustenta%C3%A7%C3%A3o%20de%20sistemas." target="_blank" rel="noopener noreferrer">
                   <Button
                     className="w-full bg-accent hover:bg-accent/90 text-foreground"
                     size="lg"
@@ -289,7 +289,7 @@ export default function Home() {
                     Agendar Conversa
                   </Button>
                 </a>
-                <a href="mailto:contato@expdev.com">
+                <a href="mailto:exponetialdev.it@gmail.com">
                   <Button
                     variant="outline"
                     size="lg"

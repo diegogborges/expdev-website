@@ -9,12 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-accent rounded-sm flex items-center justify-center">
-                <span className="text-foreground font-bold text-lg">E</span>
-              </div>
-              <span className="font-mono font-bold text-lg">EXPDEV</span>
-            </div>
+            <img src="/logo.png" alt="EXPONENTIAL DEV" className="h-10 w-auto mb-4" />
             <p className="text-sm text-gray-300">
               Especialistas em sustentação, manutenção e correção de sistemas
               existentes.
@@ -51,6 +46,26 @@ export default function Footer() {
                   Contato
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://instagram.com/exponentialdev.it"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-accent transition-colors"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/company/exp-dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-accent transition-colors"
+                >
+                  LinkedIn
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -63,19 +78,21 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-accent" />
                 <a
-                  href="mailto:contato@expdev.com"
+                  href="mailto:exponetialdev.it@gmail.com"
                   className="text-gray-300 hover:text-accent transition-colors"
                 >
-                  contato@expdev.com
+                  exponetialdev.it@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-accent" />
                 <a
-                  href="tel:+5511999999999"
+                  href="https://wa.me/5516992507202"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-300 hover:text-accent transition-colors"
                 >
-                  +55 (11) 9 9999-9999
+                  +55 (16) 99250-7202
                 </a>
               </li>
             </ul>
@@ -85,7 +102,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-700 pt-8">
           <p className="text-center text-sm text-gray-400">
-            © {currentYear} EXPDEV. Todos os direitos reservados.
+            © {currentYear} EXPONENTIAL DEV. Todos os direitos reservados.
           </p>
         </div>
       </div>

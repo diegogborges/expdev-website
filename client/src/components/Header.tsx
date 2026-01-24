@@ -17,12 +17,7 @@ export default function Header() {
       <div className="container flex items-center justify-between h-16 md:h-20 px-4 md:px-6">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <div className="w-10 h-10 bg-primary rounded-sm flex items-center justify-center">
-            <span className="text-white font-bold text-lg">E</span>
-          </div>
-          <span className="font-mono font-bold text-lg text-foreground hidden sm:inline">
-            EXPDEV
-          </span>
+          <img src="/logo.png" alt="EXPONENTIAL DEV" className="h-12 w-auto" />
         </a>
 
         {/* Desktop Navigation */}
@@ -43,8 +38,7 @@ export default function Header() {
           <Button
             className="bg-primary hover:bg-primary/90 text-white"
             onClick={() => {
-              const contactSection = document.getElementById("contact");
-              contactSection?.scrollIntoView({ behavior: "smooth" });
+              window.open('https://wa.me/5516992507202?text=Ol%C3%A1%20EXPONENTIAL%20DEV!%20Gostaria%20de%20conhecer%20seus%20servi%C3%A7os.', '_blank');
             }}
           >
             Fale Conosco
@@ -83,8 +77,7 @@ export default function Header() {
               className="w-full bg-primary hover:bg-primary/90 text-white"
               onClick={() => {
                 setIsOpen(false);
-                const contactSection = document.getElementById("contact");
-                contactSection?.scrollIntoView({ behavior: "smooth" });
+                window.open('https://wa.me/5516992507202?text=Ol%C3%A1%20EXPONENTIAL%20DEV!%20Gostaria%20de%20conhecer%20seus%20servi%C3%A7os.', '_blank');
               }}
             >
               Fale Conosco
