@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ClientsSection from "@/components/ClientsSection";
+import ContactForm from "@/components/ContactForm";
 import { CheckCircle2, AlertCircle, Zap, Shield } from "lucide-react";
 
 export default function Home() {
@@ -268,6 +269,18 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </section>
+
+        {/* Contact Form Section */}
+        <section className="container py-16 md:py-24 border-b border-border">
+          <div className="mb-12">
+            <h2 className="mb-4 text-foreground">Envie uma Mensagem</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl">
+              Descreva o desafio técnico do seu sistema. Nosso time analisará e
+              entrará em contato com uma proposta prática.
+            </p>
+          </div>
+          <ContactForm />
         </section>
 
         {/* CTA Section */}
