@@ -14,13 +14,13 @@ export default function Home() {
         "Identificamos e eliminamos falhas críticas que comprometem a experiência do usuário e a integridade dos dados.",
       problem: "Instabilidade Crônica / Bugs Recorrentes",
     },
-    {
-      icon: Shield,
-      title: "Sustentação Técnica",
-      description:
-        "Monitoramento proativo, gestão de dependências e patches de segurança para manter seu ambiente saudável 24/7.",
-      problem: "Risco de Parada / Falha de Infraestrutura",
-    },
+    // {
+    //   icon: Shield,
+    //   title: "Sustentação Técnica",
+    //   description:
+    //     "Monitoramento proativo, gestão de dependências e patches de segurança para manter seu ambiente saudável 24/7.",
+    //   problem: "Risco de Parada / Falha de Infraestrutura",
+    // },
     {
       icon: Zap,
       title: "Otimização de Performance",
@@ -28,38 +28,40 @@ export default function Home() {
         "Análise de código e otimização de banco de dados para restaurar velocidade e eficiência do sistema.",
       problem: "Lentidão / Performance Degradada",
     },
-    {
-      icon: CheckCircle2,
-      title: "Suporte Técnico Nível 3",
-      description:
-        "Atendimento direto para incidentes críticos, garantindo que seu sistema volte a funcionar no menor tempo possível.",
-      problem: "Falta de Suporte Especializado",
-    },
+    // {
+    //   icon: CheckCircle2,
+    //   title: "Suporte Técnico Nível 3",
+    //   description:
+    //     "Atendimento direto para incidentes críticos, garantindo que seu sistema volte a funcionar no menor tempo possível.",
+    //   problem: "Falta de Suporte Especializado",
+    // },
   ];
 
   const workModels = [
     {
       title: "Resolução Pontual",
-      subtitle: "Para problemas específicos e críticos",
+      subtitle: "Para correções, melhorias ou problemas específicos",
       features: [
-        "Análise inicial rápida (gratuita)",
-        "Proposta com valor fechado",
-        "Resolução completa do incidente",
-        "Diagnóstico técnico detalhado",
+        "Análise técnica inicial (gratuita)",
+        "Diagnóstico do sistema e da causa do problema",
+        "Proposta com escopo e valor fechado",
+        "Correção de bugs ou implementação da melhoria",
+        "Ajustes de performance ou estabilidade",
         "Testes de validação",
-        "Relatório da solução",
+        "Relatório técnico da solução",
       ],
       highlight: false,
     },
     {
       title: "Sustentação Mensal",
-      subtitle: "Para estabilidade e paz de espírito",
+      subtitle: "Para evolução contínua, estabilidade e tranquilidade",
       features: [
-        "Escopo definido de horas",
-        "Monitoramento proativo",
+        "Pacote mensal com escopo de horas definido",
+        "Correções e melhorias contínuas",
+        "Monitoramento e manutenção preventiva",
+        "Ajustes de performance e escalabilidade",
+        "Atualização tecnológica e gestão de dependências",
         "Suporte técnico prioritário",
-        "Manutenção preventiva",
-        "Gestão de dependências",
         "SLA para incidentes críticos",
       ],
       highlight: true,
@@ -147,9 +149,9 @@ export default function Home() {
         </section>
 
         {/* Clients Section */}
-        <section id="clients">
+        {/* <section id="clients">
           <ClientsSection />
-        </section>
+        </section> */}
 
         {/* Services Section */}
         <section id="services" className="container py-16 md:py-24 border-b border-border">
@@ -194,8 +196,7 @@ export default function Home() {
           <div className="mb-12">
             <h2 className="mb-4 text-foreground">Como Trabalhamos</h2>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              Dois modelos simples e transparentes. Escolha o que faz mais
-              sentido para seu negócio.
+              Dois modelos claros e eficientes, focados na evolução e estabilidade do seu sistema.
             </p>
           </div>
 
@@ -327,12 +328,18 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {[
+              "Java",
+              "Kotlin",
+              "Spring Boot",
               "Node.js",
               "Django",
               "React",
               "PostgreSQL",
               "MySQL",
               "Docker",
+              "RabbitMQ",
+              "Kafka",
+              "Arquitetura de Sistemas",
             ].map((tech, index) => (
               <div
                 key={index}

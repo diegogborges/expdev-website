@@ -4,13 +4,13 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-foreground text-white mt-20 border-t border-border">
+    <footer className="bg-primary text-white mt-20 border-t border-secondary">
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <img src="/logo.png" alt="EXPONENTIAL DEV" className="h-10 w-auto mb-4" />
-            <p className="text-sm text-gray-300">
+            <img src="/logo.png" alt="EXPONENTIAL DEV" className="h-12 w-auto mb-4" />
+            <p className="text-sm text-secondary">
               Especialistas em sustentação, manutenção e correção de sistemas
               existentes.
             </p>
@@ -18,14 +18,14 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-mono font-semibold text-sm mb-4 text-accent">
+            <h4 className="font-mono font-semibold text-sm mb-4 text-secondary">
               Links Rápidos
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
                   href="#services"
-                  className="text-gray-300 hover:text-accent transition-colors"
+                  className="text-white hover:text-secondary transition-colors"
                 >
                   Serviços
                 </a>
@@ -33,7 +33,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#how-we-work"
-                  className="text-gray-300 hover:text-accent transition-colors"
+                  className="text-white hover:text-secondary transition-colors"
                 >
                   Como Trabalhamos
                 </a>
@@ -41,7 +41,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#contact"
-                  className="text-gray-300 hover:text-accent transition-colors"
+                  className="text-white hover:text-secondary transition-colors"
                 >
                   Contato
                 </a>
@@ -51,7 +51,7 @@ export default function Footer() {
                   href="https://instagram.com/exponentialdev.it"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-accent transition-colors"
+                  className="text-white hover:text-secondary transition-colors"
                 >
                   Instagram
                 </a>
@@ -61,7 +61,7 @@ export default function Footer() {
                   href="https://linkedin.com/company/exp-dev"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-accent transition-colors"
+                  className="text-white hover:text-secondary transition-colors"
                 >
                   LinkedIn
                 </a>
@@ -71,26 +71,26 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-mono font-semibold text-sm mb-4 text-accent">
+            <h4 className="font-mono font-semibold text-sm mb-4 text-secondary">
               Contato
             </h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-accent" />
+                <Mail className="w-4 h-4 text-secondary" />
                 <a
                   href="mailto:exponetialdev.it@gmail.com"
-                  className="text-gray-300 hover:text-accent transition-colors"
+                  className="text-white hover:text-secondary transition-colors"
                 >
                   exponetialdev.it@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-accent" />
+                <Phone className="w-4 h-4 text-secondary" />
                 <a
                   href="https://wa.me/5516992507202"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-accent transition-colors"
+                  className="text-white hover:text-secondary transition-colors"
                 >
                   +55 (16) 99250-7202
                 </a>
@@ -100,8 +100,8 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-700 pt-8">
-          <p className="text-center text-sm text-gray-400">
+        <div className="border-t border-secondary/30 pt-8">
+          <p className="text-center text-sm text-secondary">
             © {currentYear} EXPONENTIAL DEV. Todos os direitos reservados.
           </p>
         </div>
