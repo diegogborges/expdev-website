@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ClientsSection from "@/components/ClientsSection";
 import ContactForm from "@/components/ContactForm";
-import { CheckCircle2, AlertCircle, Zap, Shield } from "lucide-react";
+import { CheckCircle2, AlertCircle, Zap, Shield, Coffee, Leaf, Cpu, Database, Boxes, MessageSquare, Workflow, GitBranch } from "lucide-react";
 
 export default function Home() {
   const services = [
@@ -121,7 +121,7 @@ export default function Home() {
                   Solicitar Diagnóstico
                 </Button>
                 <Button
-                  variant="outline"
+                  className="bg-white hover:bg-secondary text-primary font-semibold"
                   size="lg"
                   onClick={() => {
                     const servicesSection =
@@ -273,49 +273,19 @@ export default function Home() {
         </section>
 
         {/* Contact Form Section */}
-        <section className="container py-16 md:py-24 border-b border-border">
+        <section id="contact" className="container py-16 md:py-24 border-b border-border">
           <div className="mb-12">
-            <h2 className="mb-4 text-foreground">Envie uma Mensagem</h2>
+            <h2 className="mb-4 text-foreground">Pronto para Estabilidade?</h2>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              Descreva o desafio técnico do seu sistema. Nosso time analisará e
-              entrará em contato com uma proposta prática.
+              Agende uma conversa de 15 minutos com nosso time técnico. Vamos
+              entender os desafios do seu sistema e apresentar uma solução
+              prática.
             </p>
           </div>
           <ContactForm />
         </section>
 
-        {/* CTA Section */}
-        <section id="contact" className="container py-16 md:py-24 border-b border-border">
-          <div className="bg-foreground text-white p-12 md:p-16 rounded-sm">
-            <div className="max-w-2xl">
-              <h2 className="text-white mb-4">Pronto para Estabilidade?</h2>
-              <p className="text-lg text-gray-200 mb-8">
-                Agende uma conversa de 15 minutos com nosso time técnico. Vamos
-                entender os desafios do seu sistema e apresentar uma solução
-                prática.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a href="https://wa.me/5516992507202?text=Ol%C3%A1%20EXPONENTIAL%20DEV!%20Gostaria%20de%20agendar%20uma%20conversa%20sobre%20sustenta%C3%A7%C3%A3o%20de%20sistemas." target="_blank" rel="noopener noreferrer">
-                  <Button
-                    className="w-full bg-accent hover:bg-accent/90 text-foreground"
-                    size="lg"
-                  >
-                    Agendar Conversa
-                  </Button>
-                </a>
-                <a href="mailto:exponetialdev.it@gmail.com">
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="w-full border-white text-white hover:bg-white/10"
-                  >
-                    Enviar E-mail
-                  </Button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* Tech Stack Section */}
         <section className="container py-16 md:py-24 border-b border-border">
@@ -328,28 +298,32 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {[
-              "Java",
-              "Kotlin",
-              "Spring Boot",
-              "Node.js",
-              "Django",
-              "React",
-              "PostgreSQL",
-              "MySQL",
-              "Docker",
-              "RabbitMQ",
-              "Kafka",
-              "Arquitetura de Sistemas",
-            ].map((tech, index) => (
-              <div
-                key={index}
-                className="p-4 bg-card border border-border rounded-sm text-center hover:border-primary/50 hover:shadow-md transition-all"
-              >
-                <p className="font-mono font-semibold text-foreground text-sm">
-                  {tech}
-                </p>
-              </div>
-            ))}
+              { name: "Java", icon: Coffee },
+              { name: "Kotlin", icon: Leaf },
+              { name: "Spring Boot", icon: Cpu },
+              { name: "Node.js", icon: Database },
+              { name: "Django", icon: Boxes },
+              { name: "React", icon: Boxes },
+              { name: "PostgreSQL", icon: Database },
+              { name: "MySQL", icon: Database },
+              { name: "Docker", icon: Boxes },
+              { name: "RabbitMQ", icon: MessageSquare },
+              { name: "Kafka", icon: Workflow },
+              { name: "Arquitetura de Sistemas", icon: GitBranch },
+            ].map((tech) => {
+              const Icon = tech.icon;
+              return (
+                <div
+                  key={tech.name}
+                  className="p-4 bg-card border border-border rounded-sm text-center hover:border-primary/50 hover:shadow-md transition-all flex flex-col items-center gap-3"
+                >
+                  <Icon className="w-6 h-6 text-primary" />
+                  <p className="font-mono font-semibold text-foreground text-sm">
+                    {tech.name}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </section>
       </main>

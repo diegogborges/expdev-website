@@ -161,7 +161,7 @@ export default function ContactForm() {
       <Button
         type="submit"
         disabled={isLoading}
-        className="w-full bg-accent hover:bg-accent/90 text-foreground"
+        className="w-full bg-primary hover:bg-primary/90 text-white font-semibold"
         size="lg"
       >
         {isLoading ? "Enviando..." : "Enviar Mensagem"}

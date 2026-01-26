@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <img src="/logo.png" alt="EXPONENTIAL DEV" className="h-12 w-auto mb-4" />
+            <img src="/logo.png" alt="EXPONENTIAL DEV" className="h-16 w-auto mb-4" />
             <p className="text-sm text-secondary">
               Especialistas em sustentação, manutenção e correção de sistemas
               existentes.

@@ -78,7 +78,8 @@ export default function Header() {
             <Button
               className="bg-white hover:bg-secondary text-primary font-semibold"
               onClick={() => {
-                window.open('https://wa.me/5516992507202?text=Ol%C3%A1%20EXPONENTIAL%20DEV!%20Gostaria%20de%20conhecer%20seus%20servi%C3%A7os.', '_blank');
+                const contactSection = document.getElementById("contact");
+                contactSection?.scrollIntoView({ behavior: "smooth" });
               }}
             >
               {ctaText}
@@ -118,7 +119,8 @@ export default function Header() {
               className="w-full bg-white hover:bg-secondary text-primary font-semibold"
               onClick={() => {
                 setIsOpen(false);
-                window.open('https://wa.me/5516992507202?text=Ol%C3%A1%20EXPONENTIAL%20DEV!%20Gostaria%20de%20conhecer%20seus%20servi%C3%A7os.', '_blank');
+                const contactSection = document.getElementById("contact");
+                contactSection?.scrollIntoView({ behavior: "smooth" });
               }}
             >
               {ctaText}
