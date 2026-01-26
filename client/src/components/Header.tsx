@@ -2,21 +2,22 @@ import { Menu, X, Moon, Sun, Globe } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/contexts/ThemeContext";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState<"pt" | "en">("pt");
   const { theme, toggleTheme } = useTheme();
+  const { language, setLanguage } = useLanguage();
 
   const navItems = language === "pt" 
     ? [
-        { label: "Clientes", href: "#clients" },
+        // { label: "Clientes", href: "#clients" },
         { label: "Serviços", href: "#services" },
         { label: "Como Trabalhamos", href: "#how-we-work" },
         { label: "Contato", href: "#contact" },
       ]
     : [
-        { label: "Clients", href: "#clients" },
+        // { label: "Clients", href: "#clients" },
         { label: "Services", href: "#services" },
         { label: "How We Work", href: "#how-we-work" },
         { label: "Contact", href: "#contact" },
