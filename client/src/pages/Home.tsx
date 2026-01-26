@@ -121,7 +121,7 @@ export default function Home() {
                   Solicitar Diagnóstico
                 </Button>
                 <Button
-                  className="bg-white hover:bg-secondary text-primary font-semibold"
+                  className="bg-white hover:bg-secondary text-primary font-semibold border-2 border-primary"
                   size="lg"
                   onClick={() => {
                     const servicesSection =
@@ -282,7 +282,31 @@ export default function Home() {
               prática.
             </p>
           </div>
-          <ContactForm />
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            {/* WhatsApp Button */}
+            <div className="flex flex-col items-center justify-center p-8 bg-card border border-border rounded-sm h-full">
+              <a
+                href="https://wa.me/5516992507202?text=Ol%C3%A1%20EXPONENTIAL%20DEV!%20Gostaria%20de%20agendar%20uma%20conversa%20sobre%20sustenta%C3%A7%C3%A3o%20de%20sistemas."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-4 text-center w-full"
+              >
+                <svg className="w-16 h-16 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-3.055 2.116-4.687 5.744-3.653 8.997 1.034 3.254 4.032 5.559 7.46 5.559 2.393 0 4.656-.822 6.477-2.312l.879 1.22 1.497-1.086-.878-1.22c1.185-1.486 1.856-3.36 1.856-5.402 0-4.711-3.822-8.543-8.537-8.543zm0-2a10.87 10.87 0 0110.855 10.854c0 5.992-4.888 10.855-10.855 10.855-1.956 0-3.835-.52-5.45-1.507L0 23.5l1.737-5.138C1.507 16.107.98 14.228.98 12.271.98 6.279 5.868 1.417 11.854 1.417z" />
+                </svg>
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">WhatsApp</h3>
+                  <p className="text-sm text-muted-foreground">+55 (16) 99250-7202</p>
+                </div>
+              </a>
+            </div>
+
+            {/* Contact Form */}
+            <div>
+              <ContactForm />
+            </div>
+          </div>
         </section>
 
 
