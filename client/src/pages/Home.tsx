@@ -101,51 +101,36 @@ export default function Home() {
         <section className="container py-16 md:py-28 border-b border-border">
 
           <div className="text-center mb-12">
-            <div className="inline-block px-3 py-1 bg-accent/10 text-accent text-xs font-mono font-semibold rounded-sm mb-4">
-              <h1 className="mb-6 text-foreground leading-tight">
-                Seu sistema não pode parar.
-              </h1>
-            </div>
-            <h2 className="mb-4 text-foreground">Projetos criados pela Exponential SE</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A Exponetial SE também desenvolve projetos próprios, idealizados, construídos e evoluídos internamente pela empresa.
+            <h1 className="mb-6 text-foreground leading-tight">
+              Seu sistema não pode parar.
+            </h1>
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              A Exponential SE é a sua parceira técnica especializada em garantir a
+              estabilidade e o funcionamento contínuo de sistemas.
             </p>
-          </div>
-
-
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="mb-6 text-foreground leading-tight">
-                Seu sistema não pode parar.
-              </h1>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                A Exponential SE é a sua parceira técnica especializada em garantir a
-                estabilidade e o funcionamento contínuo de sistemas.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  className="bg-primary hover:bg-primary/90 text-white"
-                  size="lg"
-                  onClick={() => {
-                    const contactSection = document.getElementById("contact");
-                    contactSection?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                >
-                  Solicitar Diagnóstico
-                </Button>
-                <Button
-                  className="bg-white hover:bg-secondary text-primary font-semibold border-2 border-primary"
-                  size="lg"
-                  onClick={() => {
-                    const servicesSection =
-                      document.getElementById("services");
-                    servicesSection?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                >
-                  Conhecer Serviços
-                </Button>
-              </div>
+    
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+              <Button
+                className="bg-primary hover:bg-primary/90 text-white"
+                size="lg"
+                onClick={() => {
+                  const contactSection = document.getElementById("contact");
+                  contactSection?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Solicitar Diagnóstico
+              </Button>
+              <Button
+                className="bg-white hover:bg-secondary text-primary font-semibold border-2 border-primary"
+                size="lg"
+                onClick={() => {
+                  const servicesSection =
+                    document.getElementById("services");
+                  servicesSection?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Conhecer Serviços
+              </Button>
             </div>
           </div>
         </section>
@@ -280,42 +265,57 @@ export default function Home() {
         </section>
 
         {/* Contact Form Section */}
-        <section id="contact" className="container py-16 md:py-24 border-b border-border">
-          <div className="mb-12">
-            <h2 className="mb-4 text-foreground">Pronto para Estabilidade?</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl">
+        <section
+          id="contact"
+          className="container py-16 md:py-24 border-b border-border"
+        >
+          {/* Título + Subtítulo centralizados */}
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-foreground">
+              Pronto para Estabilidade?
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Agende uma conversa de 15 minutos com nosso time técnico. Vamos
               entender os desafios do seu sistema e apresentar uma solução
               prática.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-            {/* WhatsApp Button */}
-            <div className="flex flex-col items-center justify-center p-8 bg-card border border-border rounded-sm h-full">
-              <a
-                href="https://wa.me/5516992507202?text=Ol%C3%A1%20EXPONENTIAL%20DEV!%20Gostaria%20de%20agendar%20uma%20conversa%20sobre%20sustenta%C3%A7%C3%A3o%20de%20sistemas."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-col items-center gap-4 text-center w-full"
-              >
-                <svg className="w-16 h-16 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-3.055 2.116-4.687 5.744-3.653 8.997 1.034 3.254 4.032 5.559 7.46 5.559 2.393 0 4.656-.822 6.477-2.312l.879 1.22 1.497-1.086-.878-1.22c1.185-1.486 1.856-3.36 1.856-5.402 0-4.711-3.822-8.543-8.537-8.543zm0-2a10.87 10.87 0 0110.855 10.854c0 5.992-4.888 10.855-10.855 10.855-1.956 0-3.835-.52-5.45-1.507L0 23.5l1.737-5.138C1.507 16.107.98 14.228.98 12.271.98 6.279 5.868 1.417 11.854 1.417z" />
-                </svg>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">WhatsApp</h3>
-                  <p className="text-sm text-muted-foreground">+55 (16) 99250-7202</p>
-                </div>
-              </a>
-            </div>
 
-            {/* Contact Form */}
+          {/* Conteúdo */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            {/* Formulário - esquerda */}
             <div>
               <ContactForm />
             </div>
+
+            {/* WhatsApp - direita, alinhado à esquerda e sem fundo */}
+            <div className="flex justify-start">
+              <a
+                href="https://wa.me/5516992507202?text=Ol%C3%A1%2C%20Exponential%20SE!%20Gostaria%20de%20conversar%20sobre%20um%20desafio%20t%C3%A9cnico%20que%20estamos%20enfrentando%20e%20entender%20como%20voc%C3%AAs%20podem%20nos%20apoiar."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4"
+              >
+                <svg
+                  className="w-14 h-14 text-green-500"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347" />
+                </svg>
+
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    WhatsApp
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    +55 (16) 99250-7202
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
         </section>
-
 
 
         {/* Tech Stack Section */}

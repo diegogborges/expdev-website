@@ -64,7 +64,7 @@ export default function Header() {
             )}
           </button>
 
-          {/* Language Toggle */}
+          {/* Language Toggle 
           <button
             onClick={() => setLanguage(language === "pt" ? "en" : "pt")}
             className="p-2 rounded-md hover:bg-secondary/20 transition-colors flex items-center gap-1"
@@ -74,7 +74,8 @@ export default function Header() {
             <Globe className="w-5 h-5 text-white" />
             <span className="text-xs font-semibold text-white">{language.toUpperCase()}</span>
           </button>
-
+          */}
+          
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
             <Button
