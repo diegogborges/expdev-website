@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ClientsSection from "@/components/ClientsSection";
+import ProjectsSection from "@/components/ProjectsSection";
 import ContactForm from "@/components/ContactForm";
 import { CheckCircle2, AlertCircle, Zap, Shield, Coffee, Leaf, Cpu, Database, Boxes, MessageSquare, Workflow, GitBranch } from "lucide-react";
 
@@ -98,16 +99,29 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="container py-16 md:py-28 border-b border-border">
+
+          <div className="text-center mb-12">
+            <div className="inline-block px-3 py-1 bg-accent/10 text-accent text-xs font-mono font-semibold rounded-sm mb-4">
+              <h1 className="mb-6 text-foreground leading-tight">
+                Seu sistema não pode parar.
+              </h1>
+            </div>
+            <h2 className="mb-4 text-foreground">Projetos criados pela Exponential SE</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              A Exponetial SE também desenvolve projetos próprios, idealizados, construídos e evoluídos internamente pela empresa.
+            </p>
+          </div>
+
+
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="mb-6 text-foreground leading-tight">
                 Seu sistema não pode parar.
               </h1>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                A EXPDEV é a sua parceira técnica especializada em garantir a
-                estabilidade e o funcionamento contínuo de sistemas de missão
-                crítica. Não criamos do zero,{" "}
-                <strong>resolvemos o que já está no ar.</strong>
+                A Exponential SE é a sua parceira técnica especializada em garantir a
+                estabilidade e o funcionamento contínuo de sistemas.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
@@ -131,18 +145,6 @@ export default function Home() {
                 >
                   Conhecer Serviços
                 </Button>
-              </div>
-            </div>
-            <div className="hidden md:flex items-center justify-center">
-              <div className="w-full h-96 bg-gradient-to-br from-primary/10 to-accent/10 rounded-sm border-2 border-primary/20 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl font-mono font-bold text-primary mb-4">
-                    99.9%
-                  </div>
-                  <p className="text-foreground font-medium">
-                    Uptime Garantido
-                  </p>
-                </div>
               </div>
             </div>
           </div>
@@ -189,6 +191,11 @@ export default function Home() {
               );
             })}
           </div>
+        </section>
+
+        {/* Projects Section */}
+        <section id="projects">
+          <ProjectsSection />
         </section>
 
         {/* How We Work Section */}
@@ -244,7 +251,7 @@ export default function Home() {
         {/* Why Choose Section */}
         <section id="why-choose" className="container py-16 md:py-24 border-b border-border">
           <div className="mb-12">
-            <h2 className="mb-4 text-foreground">Por Que Escolher EXPONENTIAL DEV</h2>
+            <h2 className="mb-4 text-foreground">Por Que Escolher Exponential SE</h2>
             <p className="text-lg text-muted-foreground max-w-2xl">
               Não somos apenas uma empresa de tecnologia. Somos seu parceiro
               técnico de confiança.

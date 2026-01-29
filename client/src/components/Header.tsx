@@ -14,12 +14,14 @@ export default function Header() {
         // { label: "Clientes", href: "#clients" },
         { label: "Serviços", href: "#services" },
         { label: "Como Trabalhamos", href: "#how-we-work" },
+        { label: "Projetos", href: "#projects" },
         { label: "Contato", href: "#contact" },
       ]
     : [
         // { label: "Clients", href: "#clients" },
         { label: "Services", href: "#services" },
         { label: "How We Work", href: "#how-we-work" },
+        { label: "projects", href: "#projects" },
         { label: "Contact", href: "#contact" },
       ];
 
@@ -30,7 +32,7 @@ export default function Header() {
       <div className="container flex items-center justify-between h-20 md:h-24 px-4 md:px-6">
         {/* Logo - Aumentado */}
         <a href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity flex-shrink-0">
-          <img src="/logo.png" alt="EXPONENTIAL DEV" className="h-14 w-auto md:h-18" />
+          <img src="/logo.png" alt="Exponential SE" className="h-14 w-auto md:h-18" />
         </a>
 
         {/* Desktop Navigation */}

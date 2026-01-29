@@ -1,33 +1,26 @@
 export default function ClientsSection() {
   const clients = [
     {
-      name: "TechFlow Systems",
-      logo: "TF",
-      description: "Plataforma de gestão de pedidos",
+      name: "ExpVet",
+      logo: "EV",
+      description: "Plataforma de gestão para hospital Veterinário",
       color: "bg-blue-100",
       textColor: "text-blue-700",
     },
     {
-      name: "DataCore Solutions",
-      logo: "DC",
-      description: "Sistema de análise de dados",
+      name: "Meu Feedback",
+      logo: "MF",
+      description: "Sistema para Empresas que querem melhoras seu negocio a partir de Feedbacks de Clientes",
       color: "bg-purple-100",
       textColor: "text-purple-700",
     },
     {
-      name: "CloudSync Pro",
-      logo: "CS",
-      description: "Infraestrutura em nuvem",
+      name: "NeuroAnimal",
+      logo: "NA",
+      description: "Aplicativo especialista para diagnóstico Neurologico Veterinário",
       color: "bg-green-100",
       textColor: "text-green-700",
-    },
-    {
-      name: "FinanceHub",
-      logo: "FH",
-      description: "Sistema de gestão financeira",
-      color: "bg-amber-100",
-      textColor: "text-amber-700",
-    },
+    }
   ];
 
   return (
@@ -36,10 +29,9 @@ export default function ClientsSection() {
         <div className="inline-block px-3 py-1 bg-accent/10 text-accent text-xs font-mono font-semibold rounded-sm mb-4">
           Confiança Comprovada
         </div>
-        <h2 className="mb-4 text-foreground">Empresas que Confiam na Exponential SE</h2>
+        <h2 className="mb-4 text-foreground">Projetos criados pela Exponential SE</h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Pequenas e médias empresas que transformaram a estabilidade de seus
-          sistemas em um ativo competitivo.
+          A Exponetial SE também desenvolve projetos próprios, idealizados, construídos e evoluídos internamente pela empresa.
         </p>
       </div>
 
@@ -62,11 +54,7 @@ export default function ClientsSection() {
 
       <div className="mt-12 p-6 bg-secondary rounded-sm border border-border text-center">
         <p className="text-sm text-muted-foreground">
-          Estas empresas reduziram downtime em até{" "}
-          <span className="text-primary font-semibold">95%</span> e melhoraram
-          performance em até{" "}
-          <span className="text-primary font-semibold">3x</span> após parceria
-          com Exponential SE.
+          A Exponential SE une expertise técnica e inovação para criar soluções escaláveis.
         </p>
       </div>
     </section>

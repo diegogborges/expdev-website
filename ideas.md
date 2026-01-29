@@ -1,7 +1,7 @@
-# EXPDEV Website Design Brainstorm
+# Exponential SE Website Design Brainstorm
 
 ## Contexto
-A EXPDEV é uma empresa B2B de manutenção e sustentação de sistemas existentes. O design deve transmitir confiança, pragmatismo técnico e responsabilidade. Foco em gestores de PMEs que precisam de estabilidade, não de promessas vazias.
+A Exponential SE é uma empresa B2B de manutenção e sustentação de sistemas existentes. O design deve transmitir confiança, pragmatismo técnico e responsabilidade. Foco em gestores de PMEs que precisam de estabilidade, não de promessas vazias.
 
 ---
 
@@ -148,10 +148,10 @@ A EXPDEV é uma empresa B2B de manutenção e sustentação de sistemas existent
 
 **Selecionei a Abordagem 1: Minimalismo Industrial**
 
-Esta abordagem reflete perfeitamente o posicionamento da EXPDEV: técnica, confiável, sem exageros. O design transmite:
+Esta abordagem reflete perfeitamente o posicionamento da Exponential SE: técnica, confiável, sem exageros. O design transmite:
 - **Confiança:** Paleta reduzida e cores que remetem a painéis de controle
 - **Pragmatismo:** Cada elemento tem propósito, sem decoração desnecessária
 - **Profissionalismo:** Tipografia forte e espaço generoso
 - **Técnica Acessível:** Uso de monospace para headlines cria conexão técnica sem alienar gestores
 
-A combinação de cinza escuro com azul-petróleo e acentos em verde menta transmite "sistema operacional" e "estabilidade", exatamente o que a EXPDEV vende.
+A combinação de cinza escuro com azul-petróleo e acentos em verde menta transmite "sistema operacional" e "estabilidade", exatamente o que a Exponential SE vende.
